@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api', // Using proxy or relative if hosted together
+  baseURL: import.meta.env.VITE_API_URL || '/api',
 });
 
 // Add a request interceptor
