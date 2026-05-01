@@ -13,6 +13,8 @@ import dashboardRoutes from './routes/dashboardRoutes.js';
 
 dotenv.config();
 
+console.log('MONGO_URI present:', !!process.env.MONGO_URI);
+
 connectDB();
 
 const app = express();
